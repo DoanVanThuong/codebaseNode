@@ -38,7 +38,6 @@ class Program {
             }
             next();
         });
-
         // CORS
         server.all('*', function (req, res, next) {
             res.header('Access-Control-Allow-Origin', "*");
@@ -53,7 +52,6 @@ class Program {
                 res.send();
                 return;
             }
-
             next();
         });
 
